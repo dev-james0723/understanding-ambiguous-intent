@@ -1,0 +1,4 @@
+interface:
+  display_name: "Understanding Ambiguous Intent"
+  short_description: "Recover intended outcomes with fewer needless questions"
+  default_prompt: "Use $understanding-ambiguous-intent to understand my request, preserve its constraints, and carry out the intended task."

@@ -1,0 +1,15 @@
+{
+  "name": "uai-public",
+  "owner": {
+    "name": "James Au"
+  },
+  "plugins": [
+    {
+      "name": "understanding-ambiguous-intent",
+      "source": "./",
+      "description": "Recover intended outcomes and clarify material gaps.",
+      "version": "0.3.0"
+    }
+  ],
+  "description": "Public experimental UAI skill for recovering intended outcomes and clarifying material gaps."
+}

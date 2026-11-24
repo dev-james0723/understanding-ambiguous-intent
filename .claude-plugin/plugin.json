@@ -1,0 +1,11 @@
+{
+  "name": "understanding-ambiguous-intent",
+  "version": "0.3.0",
+  "description": "Recover intended outcomes from imperfect instructions, preserve constraints, and clarify material gaps.",
+  "author": {
+    "name": "James Au"
+  },
+  "homepage": "https://github.com/dev-james0723/understanding-ambiguous-intent",
+  "repository": "https://github.com/dev-james0723/understanding-ambiguous-intent",
+  "license": "MIT"
+}
