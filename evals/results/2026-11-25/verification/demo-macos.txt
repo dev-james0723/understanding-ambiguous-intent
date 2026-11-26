@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "scope": "synthetic-local-cli-and-optional-mcp",
+  "checks": {
+    "granted_source_discovery": true,
+    "search_read_preferences_project": true,
+    "expired_history_excluded_from_intent": true,
+    "conflict_reported": true,
+    "bounded_tail_search": true,
+    "retrieval_left_source_unchanged": true,
+    "changed_metadata_invalidates_record_id": true,
+    "unavailable_source_reported_with_useful_results": true,
+    "post_edit_retrieval_left_source_unchanged": true
+  },
+  "cli_operations_exercised": 8,
+  "mcp": {
+    "tools_discovered": 8,
+    "retrieval_verified": true
+  },
+  "real_user_memory_read": false,
+  "native_host_triggering_verified": false
+}
+Processing request of type ListToolsRequest
+Processing request of type CallToolRequest

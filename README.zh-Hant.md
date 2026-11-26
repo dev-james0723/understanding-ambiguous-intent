@@ -7,7 +7,7 @@
 UAI 係一個開源、精簡嘅 AI agent 技能。重點係理解你想要嘅結果、
 讀取相關上下文、保留限制同更正，再判斷應該直接做、講明假設，定係問一條必要問題。
 
-**v0.3.0 屬於實驗版本。** 暫時唔聲稱比原生模型或其他技能更好。
+**v0.4.0 屬於實驗版本。** 暫時唔聲稱比原生模型或其他技能更好。
 請先睇實際測試輸出同限制，再判斷係咪適合你。
 
 ## 你可以點樣用
@@ -25,10 +25,11 @@ UAI 係一個開源、精簡嘅 AI agent 技能。重點係理解你想要嘅結
 
 ## 安裝
 
-Claude Code 2.1.275 或以上，可喺 Claude Code 入面執行：
+Claude Code（已用 2.1.331 驗證分發流程）可執行：
 
-```text
-/plugin install understanding-ambiguous-intent --marketplace dev-james0723/understanding-ambiguous-intent
+```sh
+claude plugin marketplace add dev-james0723/understanding-ambiguous-intent
+claude plugin install understanding-ambiguous-intent@uai-public
 ```
 
 如想手動安裝或使用其他 host，跟住以下步驟。
@@ -39,7 +40,7 @@ Claude Code 2.1.275 或以上，可喺 Claude Code 入面執行：
 ```sh
 git clone https://github.com/dev-james0723/understanding-ambiguous-intent.git
 cd understanding-ambiguous-intent
-git checkout v0.3.0
+git checkout v0.4.0
 ```
 
 支援用戶層 `.agents/skills` 嘅 host：
@@ -85,9 +86,40 @@ claude --plugin-dir /absolute/path/to/understanding-ambiguous-intent
 
 ## 記憶與私隱
 
-UAI 核心只需要當前對話。佢本身唔會收集背景對話、讀取所有歷史、
-儲存記憶或同步帳戶。可選上下文整合必須依靠 host 真正提供、
-而且已授權嘅能力。見 [adapter 設計契約](docs/context-adapters.md)。
+UAI 核心只需要當前對話。可選嘅 **Context Bridge** 提供八個唯讀本機工具，
+可以喺已設定嘅來源搵相關偏好、項目決定同記憶，保留來源、適用範圍及時間資訊。
+佢會標示未解決嘅衝突，並喺組合意圖上下文時排除已過期、封存或取代嘅記錄。
+
+先用示範試晒八個工具；只會建立同清除臨時模擬資料，唔會讀取你嘅真實記憶：
+
+```sh
+python3 scripts/demo_context.py
+```
+
+接駁一個你選定嘅記憶資料夾：
+
+```sh
+python3 scripts/configure_context.py --project demo --adapter claude-memory \
+  --root /absolute/path/to/project/memory --out /absolute/path/to/private/uai.json
+python3 scripts/uai_context_bridge.py --config /absolute/path/to/private/uai.json \
+  build_intent_context demo "previous design decision"
+```
+
+設定工具只檢查路徑，唔讀內容，亦唔會覆蓋已有設定。要讓 host 按任務自動調用，
+再按照 [Context Bridge 指南](docs/context-bridge.md) 註冊可選 MCP server。
+支援指定嘅 Markdown／JSON／JSONL 及常見 agent 檔案布局；屬於檔案 adapter，
+唔等於每個平台嘅原生記憶整合。搜尋係關鍵字搜尋，唔係語義搜尋。
+
+UAI 唔會收集背景對話、讀取所有歷史、寫入記憶或同步帳戶。
+工具將所選摘錄回傳畀 host；host 可能會將內容送到佢使用嘅模型供應商。
+
+## 修正、續接同取消
+
+修改一個細節時，保留其他要求；工作途中問進度，答完繼續已授權嘅剩餘工作；
+明確取消時，停止舊目標嘅待執行動作。已完成任務之後再問建議，應該先回答建議。
+
+詳見 [三個示範](docs/examples.md)、[任務交接參考](skills/understanding-ambiguous-intent/references/task-continuity.md)
+及 [各項驗證與限制](docs/verification.md)。
 
 ## 本機驗證
 
@@ -95,11 +127,15 @@ UAI 核心只需要當前對話。佢本身唔會收集背景對話、讀取所�
 python3 scripts/check.py
 python3 -m unittest discover -s tests -v
 python3 scripts/evaluate.py --help
+python3 scripts/compare_results.py --help
 ```
 
 [評測說明](evals/README.md) 將題目同評分準則分開，支援比較無技能、
 簡短指令同 UAI 嘅輸出。結構檢查唔等於行為測試；
 純文字測試亦唔等於已驗證真實工具操作。
+
+[今次公開比較](evals/results/2026-11-25/comparison/README.md) 三組都符合原評分準則嘅
+21／24 題，所有配對結果相同，未能證明 UAI 比另外兩組更好。
 
 歡迎提交經匿名化嘅例子，附上必要上下文、預期結果、實際結果、
 host 同模型版本。詳見 [貢獻指引](CONTRIBUTING.md)。

@@ -1,0 +1,2 @@
+# Optional transport only. Core and CLI do not need this dependency.
+mcp>=1.28,<2

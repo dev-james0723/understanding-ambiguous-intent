@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "check": "repository",
+      "exit": 0,
+      "output": "PASS: runtime structure, version consistency, documentation links, fixture separation\nThis check makes no claim about model behavior or installation.",
+      "error": ""
+    },
+    {
+      "check": "plugin",
+      "exit": 0,
+      "success": true,
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "check": "marketplace",
+      "exit": 0,
+      "success": true,
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "isolated_claude_install": [
+    {
+      "check": "marketplace-add",
+      "exit": 0
+    },
+    {
+      "check": "plugin-install",
+      "exit": 0
+    },
+    {
+      "check": "plugin-list",
+      "exit": 0
+    }
+  ],
+  "cached_skill_matches_source": true,
+  "manual_install_exit": 0,
+  "manual_install_files_exact": true,
+  "runtime_file_count": 3,
+  "production_user_configuration_changed": false,
+  "version": "0.3.0",
+  "date": "2026-11-24",
+  "claude_cli_version": "2.1.331",
+  "utility_tests_passed": 12,
+  "skill_validator_exit": 0,
+  "forward_responses_reviewed": 4,
+  "forward_responses_meeting_rubric": 4,
+  "controlled_comparison_completed": false,
+  "runtime_skill_sha256": "9b8003d52e3e2dcf4265c86a7c3a497d87710eae6174c5297687953ed9e33eb6"
+}

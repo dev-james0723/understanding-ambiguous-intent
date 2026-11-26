@@ -1,0 +1,11 @@
+{
+  "host": "Codex CLI",
+  "version": "codex-cli 0.171.0",
+  "runtime_sha256": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd",
+  "model_invoked": false,
+  "automatic_triggering_verified": false,
+  "status": "passed",
+  "native_discovery": true,
+  "enabled": true,
+  "scope": "repo"
+}

@@ -1,0 +1,29 @@
+{
+  "boundary": {
+    "planned": 16,
+    "recorded": 16,
+    "judged": 16,
+    "passed": 16,
+    "unnecessary_questions": 0,
+    "missed_necessary_questions": 0,
+    "critical_failures": 0,
+    "infrastructure_failures": 0
+  },
+  "trajectory": {
+    "planned": 13,
+    "recorded": 13,
+    "judged": 13,
+    "passed": 13,
+    "unnecessary_questions": 0,
+    "missed_necessary_questions": 0,
+    "critical_failures": 0,
+    "infrastructure_failures": 0
+  },
+  "coverage": "planned-fixtures-and-turns",
+  "trials": 1,
+  "trajectory_count": 4,
+  "unique_actor_threads": 20,
+  "review": "independent agent review with integration-agent artifact and borderline inspection; no human review",
+  "comparative": false,
+  "runtime_skill_sha256": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd"
+}

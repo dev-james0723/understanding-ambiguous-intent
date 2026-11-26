@@ -1,0 +1,32 @@
+{
+  "surface": "fresh ChatGPT collaboration agent using real local bridge CLI",
+  "actor_model_requested": "gpt-6.2-sol",
+  "reasoning_effort_requested": "high",
+  "runtime_sha256": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd",
+  "checks": {
+    "current_brand": true,
+    "current_time": true,
+    "venue_preserved": true,
+    "free_admission": true,
+    "two_sentences": true,
+    "only_requested_artifact": true,
+    "memory_unchanged": true,
+    "real_bridge_calls": true
+  },
+  "operations": [
+    "build_intent_context",
+    "resolve_memory_conflicts"
+  ],
+  "artifact_sha256": "8862b9f8282493320d5207f454e9da848b9aa1b75cbd787d4fe2a415747b60de",
+  "real_user_memory_read": false,
+  "native_model_host_triggering_verified": false,
+  "source_before_sha256": "c96d7b01e26f50641118052d6c1c596d72eb2e2ca79d5de83b28392f931b0ae4",
+  "source_after_sha256": "c96d7b01e26f50641118052d6c1c596d72eb2e2ca79d5de83b28392f931b0ae4",
+  "work_files": [
+    "announcement.md"
+  ],
+  "trace_sha256": "54b151b9ea232d738e1106b1f6bc8952ce0496e131baa01b8ff82464f047e677",
+  "model_resolved": null,
+  "settings_resolved": null,
+  "review_method": "Independent agent inspected actual trace and final source/artifact state; no human review claimed"
+}

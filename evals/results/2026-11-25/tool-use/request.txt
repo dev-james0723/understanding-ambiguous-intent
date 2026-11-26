@@ -1,0 +1,3 @@
+Use UAI with the configured workshop project and its read-only Context Bridge.
+
+幫我用返 workshop 記憶入面最新嘅品牌、地點同入場資料，寫兩句繁體中文公告，品牌名 keep English。今次開始時間改成 11:00。將草稿存成 announcement.md，其他檔案唔好改，唔好發送。完成後簡短講返你核對咗啲咩。

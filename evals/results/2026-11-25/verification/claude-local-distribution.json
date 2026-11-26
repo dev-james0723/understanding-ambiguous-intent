@@ -1,0 +1,33 @@
+{
+  "host": "Claude Code",
+  "version": "2.1.331 (Claude Code)",
+  "model_invoked": false,
+  "automatic_triggering_verified": false,
+  "source": "isolated-local-marketplace",
+  "steps": {
+    "validate_plugin": {
+      "exit_code": 0
+    },
+    "validate_marketplace": {
+      "exit_code": 0
+    },
+    "marketplace_add": {
+      "exit_code": 0
+    },
+    "install": {
+      "exit_code": 0
+    },
+    "list": {
+      "exit_code": 0
+    },
+    "inventory": {
+      "exit_code": 0
+    }
+  },
+  "listed_version": true,
+  "listed_enabled": true,
+  "inventory_mentions_skill": true,
+  "runtime_sha256": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd",
+  "installed_runtime_hash_matches": true,
+  "status": "passed"
+}

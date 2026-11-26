@@ -1,0 +1,44 @@
+name: Intent or context problem
+description: Share a small reproducible case where UAI misunderstood or stalled.
+title: "[Intent] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic or redacted examples. Include only the context needed to reproduce the problem; do not upload private histories, credentials or memory files."
+  - type: input
+    id: environment
+    attributes:
+      label: Host, model and UAI version
+      placeholder: "Host/version; model if known; UAI tag or commit"
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: Request and minimum relevant context
+      description: Include corrections and constraints that affect the intended result.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you wanted to achieve
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: Distinguish the written reply from any observed tool effects.
+    validations:
+      required: true
+  - type: textarea
+    id: context_tools
+    attributes:
+      label: Optional context setup
+      description: "If relevant: adapter, project scope, retrieval warnings, and whether the source was available. Use synthetic paths and excerpts."
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps or a minimal fixture
+      description: Say whether the problem repeats, and include a baseline result if you already have one.

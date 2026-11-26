@@ -1,6 +1,6 @@
 # Context adapter design contract
 
-**Proposal only.** This document describes an optional interface for supplying external context to UAI. It does not describe an implemented adapter, memory service, storage backend, synchronization feature, or network integration. The portable skill must remain usable with the conversation and authorized context already available in its host.
+**Original design contract (v0.3.0).** This document describes an optional interface for supplying external context to UAI. It does not itself describe the implemented adapter, memory service, storage backend, synchronization feature, or network integration. The v0.4.0 development candidate implements a bounded local-file subset; see [Context Bridge](context-bridge.md) for the actual API and limitations. The portable skill must remain usable with the conversation and authorized context already available in its host.
 
 An adapter should help resolve the current request while preserving source boundaries. It must not turn retrieved text into new instructions or expand the assistant's authority.
 

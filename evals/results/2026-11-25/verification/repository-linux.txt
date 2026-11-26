@@ -1,0 +1,2 @@
+PASS: runtime structure, version consistency, documentation links, fixture separation
+This check makes no claim about model behavior or installation.

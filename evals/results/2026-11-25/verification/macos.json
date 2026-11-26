@@ -1,0 +1,35 @@
+{
+  "source_commit": "17e92b1fc004952f59c015b50be45047be227b60",
+  "recorded_at_utc": "2026-11-26T00:13:01.878873+00:00",
+  "platform": "Darwin",
+  "architecture": "arm64",
+  "python": "3.12.8",
+  "mcp_sdk": "1.30.0",
+  "skill_sha256": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd",
+  "checks": [
+    {
+      "check": "repository",
+      "exit_code": 0,
+      "log_sha256": "5cd68690fd41f9b0c2751b2a75a3de131af36c330fdd879a2a07a91d2b2159c4",
+      "log": "repository-macos.txt"
+    },
+    {
+      "check": "tests",
+      "exit_code": 0,
+      "log_sha256": "3d06f6fab840dd537bb8f354b81aada597dc71242d325c7f83ef8dc1ad053628",
+      "log": "tests-macos.txt"
+    },
+    {
+      "check": "demo",
+      "exit_code": 0,
+      "log_sha256": "8a42c4e4a7279686741fcb6f4de9394549b9bfdce0d8c8f877ca6f418fd32e98",
+      "log": "demo-macos.txt"
+    },
+    {
+      "check": "diff",
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "log": "diff-macos.txt"
+    }
+  ]
+}

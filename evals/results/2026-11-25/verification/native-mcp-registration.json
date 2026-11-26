@@ -1,0 +1,75 @@
+{
+  "recorded_at_utc": "2026-11-25T23:50:19.855342+00:00",
+  "source_commit": "05a207ba88d6b9614337744672add12a910f08ed",
+  "skill_sha256": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd",
+  "claude_version": "2.1.331 (Claude Code)",
+  "codex_version": "codex-cli 0.171.0",
+  "checks": [
+    {
+      "command": [
+        "claude",
+        "mcp",
+        "add",
+        "--scope"
+      ],
+      "exit_code": 0,
+      "output": "Added stdio MCP server uai-release-check with command: $RELEASE_CHECKOUT/.tools/mcp-venv/bin/python $RELEASE_CHECKOUT/scripts/uai_context_bridge.py --config $FIXTURE/grants.json serve to user config\nFile modified: $FIXTURE/claude-config/.claude.json\n"
+    },
+    {
+      "command": [
+        "claude",
+        "mcp",
+        "list"
+      ],
+      "exit_code": 0,
+      "output": "Checking MCP server health\u2026\n\nuai-release-check: $RELEASE_CHECKOUT/.tools/mcp-venv/bin/python $RELEASE_CHECKOUT/scripts/uai_context_bridge.py --config $FIXTURE/grants.json serve - \u2714 Connected\n"
+    },
+    {
+      "command": [
+        "claude",
+        "mcp",
+        "get",
+        "uai-release-check"
+      ],
+      "exit_code": 0,
+      "output": "uai-release-check:\n  Scope: User config (available in all your projects)\n  Status: \u2714 Connected\n  Type: stdio\n  Command: $RELEASE_CHECKOUT/.tools/mcp-venv/bin/python\n  Args: $RELEASE_CHECKOUT/scripts/uai_context_bridge.py --config $FIXTURE/grants.json serve\n  Environment:\n\nTo remove this server, run: claude mcp remove uai-release-check -s user\n"
+    },
+    {
+      "command": [
+        "codex",
+        "-c",
+        "<ephemeral UAI server configuration>",
+        "mcp",
+        "list",
+        "--json"
+      ],
+      "exit_code": 0,
+      "server": {
+        "name": "uai-release-check",
+        "enabled": true,
+        "disabled_reason": null,
+        "transport": {
+          "type": "stdio",
+          "command": "$RELEASE_CHECKOUT/.tools/mcp-venv/bin/python",
+          "args": [
+            "$RELEASE_CHECKOUT/scripts/uai_context_bridge.py",
+            "--config",
+            "$FIXTURE/grants.json",
+            "serve"
+          ],
+          "env": null,
+          "env_vars": [],
+          "cwd": null
+        },
+        "startup_timeout_sec": null,
+        "tool_timeout_sec": null,
+        "auth_status": "unsupported"
+      },
+      "scope": "process-only config override; no persisted Codex registration"
+    }
+  ],
+  "source_before_sha256": "e9c2f7c77a5b22b5c21aaae958dd9bfedd53b52be4ffcc784ff3af84640c3a67",
+  "source_after_sha256": "e9c2f7c77a5b22b5c21aaae958dd9bfedd53b52be4ffcc784ff3af84640c3a67",
+  "model_invoked": false,
+  "temporary_config_removed": true
+}

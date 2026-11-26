@@ -1,52 +1,114 @@
 {
-  "checks": [
-    {
-      "check": "repository",
-      "exit": 0,
-      "output": "PASS: runtime structure, version consistency, documentation links, fixture separation\nThis check makes no claim about model behavior or installation.",
-      "error": ""
-    },
-    {
-      "check": "plugin",
-      "exit": 0,
-      "success": true,
-      "errors": [],
-      "warnings": []
-    },
-    {
-      "check": "marketplace",
-      "exit": 0,
-      "success": true,
-      "errors": [],
-      "warnings": []
-    }
+  "version": "0.4.0",
+  "status": "experimental",
+  "evidence_dates_utc": [
+    "2026-11-25",
+    "2026-11-26"
   ],
-  "isolated_claude_install": [
-    {
-      "check": "marketplace-add",
-      "exit": 0
+  "runtime_skill_sha256": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd",
+  "runtime_file_count": 4,
+  "code_manifest_sha256": {
+    "context_bridge/__init__.py": "7ef7af2d8226a3fba06029226515264c300eba89cf16031b161c871561ccd12a",
+    "context_bridge/__main__.py": "181316eae77a45709bcbd3029f1d6d786b3950422230169cfbbeb7c16ceb5692",
+    "context_bridge/core.py": "24f3e77b07c5c4ae9367c4cddb0172ac9bc49e8201b9374edfbaef881d962bc3",
+    "context_bridge/mcp_server.py": "e39dd42d690d4748bc3a2831d3976eebe614663284dcf54dec849ea3e1b91647",
+    "context_bridge/requirements-mcp.txt": "f7363d54d58f8148d42bb7b80843ad8bfa1d7690ad8a0f985ded8bd2799f25aa",
+    "scripts/check.py": "5d7a662c9e5a71c532d5ede8f49231c15f9cbe45c853eeeabcc5cff5f755ebb0",
+    "scripts/compare_results.py": "31bcbd82aaeeb9657e85ed879368f36f146465fd9484d680986dc725a58d5303",
+    "scripts/configure_context.py": "f5717de218f01c088feb059a6181b19774b1f7a7805d6cc4715801a0e244e3ae",
+    "scripts/demo_context.py": "6ae31fb166dc282f860d91db4dc8d80656e43a2e6680328f623c9bbf67b639ed",
+    "scripts/evaluate.py": "2d5b754e9af9350320b15f36641775489559d4d07720445aa78a836edb94c8b7",
+    "scripts/install.py": "87da942144fbb54d7e48eb4a73ae225fe4fc2f92d0f0da73135482746dec1f1d",
+    "scripts/uai_context_bridge.py": "787dfc0d09b398a15043c714b64b811eefaad6a00579d4784af6207fc73dcd6e",
+    "skills/understanding-ambiguous-intent/SKILL.md": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd",
+    "skills/understanding-ambiguous-intent/agents/openai.yaml": "2999c97584a74622694d2c966ca14731efc3c20f70ca3f1975e3c029f3d1f961",
+    "skills/understanding-ambiguous-intent/references/examples.md": "581f325568d28054e0824207a607f8df531427b0090dd0bd064d19b335ffe20b",
+    "skills/understanding-ambiguous-intent/references/task-continuity.md": "4287e646e3ba9730febd9a7f412251eaa3123437eba77b547c7be39041d61097",
+    "tests/test_comparison.py": "51a337642d67a14aad4e8bd34250fda99cc019ad4d5f328e40ea66d726925118",
+    "tests/test_configure_context.py": "008235777bf7d6a3a399e5407f62b318e226adee24b908e14f8cf2193f128a6e",
+    "tests/test_context_bridge.py": "60a79e5a2b7788796dca76e7c39821f14334d3ba32d404973226c12e28fa576a",
+    "tests/test_context_bridge_mcp.py": "1372f4380c202baf9e343b685163576ca9a4456da997d9d95ee991db274728ac",
+    "tests/test_demo.py": "10481319640ee1259493d76f6e64e4792bf4b1990bdfc45959a75de5ab5dcc9f",
+    "tests/test_distribution.py": "cb602a6ab5796d9fa7b8351007c0fdba4c88b52ee32f832ed20f07de54df94a3"
+  },
+  "linux": {
+    "python": "3.12.14",
+    "mcp": "1.29.0",
+    "tests_passed": 78,
+    "stdio_protocol_passed": true
+  },
+  "macos": {
+    "python": "3.12.8",
+    "mcp": "1.30.0",
+    "tests_passed": 78,
+    "stdio_protocol_passed": true
+  },
+  "comparison": {
+    "planned": 72,
+    "completed": 72,
+    "attempts": 73,
+    "retry_count": 1,
+    "passes_per_condition": {
+      "baseline": 21,
+      "brief": 21,
+      "uai": 21
     },
-    {
-      "check": "plugin-install",
-      "exit": 0
+    "per_condition_denominator": 24,
+    "paired_ties_per_candidate": 24,
+    "critical_failures": 0,
+    "fixture_validity_concern": [
+      "dev-12"
+    ],
+    "human_reviewed": false,
+    "superiority_established": false
+  },
+  "forward": {
+    "boundary": {
+      "planned": 16,
+      "recorded": 16,
+      "judged": 16,
+      "passed": 16,
+      "unnecessary_questions": 0,
+      "missed_necessary_questions": 0,
+      "critical_failures": 0,
+      "infrastructure_failures": 0
     },
-    {
-      "check": "plugin-list",
-      "exit": 0
-    }
-  ],
-  "cached_skill_matches_source": true,
-  "manual_install_exit": 0,
-  "manual_install_files_exact": true,
-  "runtime_file_count": 3,
-  "production_user_configuration_changed": false,
-  "version": "0.3.0",
-  "date": "2026-11-24",
-  "claude_cli_version": "2.1.331",
-  "utility_tests_passed": 12,
-  "skill_validator_exit": 0,
-  "forward_responses_reviewed": 4,
-  "forward_responses_meeting_rubric": 4,
-  "controlled_comparison_completed": false,
-  "runtime_skill_sha256": "9b8003d52e3e2dcf4265c86a7c3a497d87710eae6174c5297687953ed9e33eb6"
+    "trajectory": {
+      "planned": 13,
+      "recorded": 13,
+      "judged": 13,
+      "passed": 13,
+      "unnecessary_questions": 0,
+      "missed_necessary_questions": 0,
+      "critical_failures": 0,
+      "infrastructure_failures": 0
+    },
+    "coverage": "planned-fixtures-and-turns",
+    "trials": 1,
+    "trajectory_count": 4,
+    "unique_actor_threads": 20,
+    "review": "independent agent review with integration-agent artifact and borderline inspection; no human review",
+    "comparative": false,
+    "runtime_skill_sha256": "5633377efaaa9b85fd9ed0fddfb62e45fe0b3f8d9db3c1cd7dcf8088c849b3fd"
+  },
+  "observed_tool_workflows": 1,
+  "native_skill_discovery": {
+    "claude": "2.1.331",
+    "codex": "0.171.0"
+  },
+  "native_automatic_triggering_verified": false,
+  "native_model_driven_mcp_verified": false,
+  "native_mcp_checks": {
+    "claude": "isolated registration and connected health",
+    "codex": "process-only configuration and enabled listing"
+  },
+  "real_user_memory_read": false,
+  "production_user_config_changed": false,
+  "final_public_commit_and_remote_checks": "release-verification.json attached to GitHub v0.4.0 prerelease",
+  "independent_source_review": {
+    "status": "ready-to-merge",
+    "reviewed_revision": "17e92b1fc004952f59c015b50be45047be227b60",
+    "final_fix_findings_addressed": 4,
+    "outstanding_source_blockers": 0
+  }
 }

@@ -1,0 +1,1007 @@
+{
+  "conditions": {
+    "baseline": {
+      "behavior_failures": 3,
+      "critical_failures": 0,
+      "infrastructure_by_status": {},
+      "infrastructure_errors": 0,
+      "judged": 24,
+      "missed_necessary_questions": 1,
+      "passes": 21,
+      "recorded": 24,
+      "successful": 24,
+      "unnecessary_questions": 0
+    },
+    "brief": {
+      "behavior_failures": 3,
+      "critical_failures": 0,
+      "infrastructure_by_status": {},
+      "infrastructure_errors": 0,
+      "judged": 24,
+      "missed_necessary_questions": 1,
+      "passes": 21,
+      "recorded": 24,
+      "successful": 24,
+      "unnecessary_questions": 0
+    },
+    "uai": {
+      "behavior_failures": 3,
+      "critical_failures": 0,
+      "infrastructure_by_status": {},
+      "infrastructure_errors": 0,
+      "judged": 24,
+      "missed_necessary_questions": 1,
+      "passes": 21,
+      "recorded": 24,
+      "successful": 24,
+      "unnecessary_questions": 0
+    }
+  },
+  "coverage": "expected-grid",
+  "vs_baseline": {
+    "brief": {
+      "dev-01": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s029",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s030",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-02": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s038",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s059",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-03": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s011",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s069",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-04": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s024",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s034",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-05": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s044",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s014",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-06": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s060",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s071",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-07": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s004",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s032",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-08": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s012",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s042",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-09": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s063",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s002",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-10": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s025",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s003",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-11": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s047",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s020",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-12": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s070",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_fail",
+            "sample_id": "s028",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-13": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s052",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_fail",
+            "sample_id": "s064",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-14": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s017",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s035",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-15": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s067",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s018",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-16": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s051",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s054",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-01": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s031",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s072",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-02": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s056",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s068",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-03": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s001",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s062",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-04": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s013",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s027",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-05": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s022",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_fail",
+            "sample_id": "s016",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-06": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s040",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s015",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-07": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s046",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s061",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-08": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s010",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s021",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      }
+    },
+    "uai": {
+      "dev-01": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s029",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s006",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-02": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s038",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s019",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-03": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s011",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s008",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-04": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s024",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s009",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-05": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s044",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s033",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-06": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s060",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s045",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-07": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s004",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s036",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-08": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s012",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s050",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-09": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s063",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s066",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-10": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s025",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s058",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-11": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s047",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s053",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-12": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s070",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_fail",
+            "sample_id": "s055",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-13": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s052",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_fail",
+            "sample_id": "s057",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-14": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s017",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s005",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-15": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s067",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s026",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "dev-16": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s051",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s048",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-01": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s031",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s049",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-02": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s056",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s041",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-03": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s001",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s007",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-04": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s013",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s043",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-05": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s022",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_fail",
+            "sample_id": "s023",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-06": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s040",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s039",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-07": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s046",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s037",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      },
+      "smoke-08": {
+        "comparable_pairs": 1,
+        "improvements": 0,
+        "infrastructure_pairs": 0,
+        "new_critical_failures": 0,
+        "recorded_pairs": 1,
+        "regressions": 0,
+        "ties": 1,
+        "trials": [
+          {
+            "baseline_sample_id": "s010",
+            "baseline_status": "ok",
+            "new_critical_failure": false,
+            "outcome": "tie_pass",
+            "sample_id": "s065",
+            "status": "ok",
+            "trial": 1
+          }
+        ]
+      }
+    }
+  }
+}

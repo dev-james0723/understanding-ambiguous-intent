@@ -58,10 +58,10 @@ def check(root=ROOT):
     for path in skill.parent.rglob("*"):
         require(not path.is_symlink(), f"Runtime symlink: {path.relative_to(root)}")
         if path.is_file():
-            require(path.name in {"SKILL.md", "examples.md", "openai.yaml"},
+            require(path.name in {"SKILL.md", "examples.md", "task-continuity.md", "openai.yaml"},
                     f"Unexpected runtime file: {path.relative_to(root)}")
     for path in root.rglob("*.md"):
-        if any(part in {".git", ".tools", ".local-eval"} for part in path.relative_to(root).parts):
+        if any(part in {".git", ".tools", ".local-eval", ".superpowers"} for part in path.relative_to(root).parts):
             continue
         content = path.read_text(encoding="utf-8")
         for destination in re.findall(r"\[[^\]]*\]\(([^)]+)\)", content):
